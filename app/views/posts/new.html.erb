@@ -1,0 +1,13 @@
+<div class="main">
+  <div class="newpost-form">
+    <%= form_tag("/posts/create",{multipart: true}) do %>
+    <div class="input">
+      <p>投稿する写真を選択</p>
+      <input name="image" type="file">
+      <p>テキストを入力</p>
+      <textarea name="content"></textarea>
+      <input type="submit" value="送信">
+    </div>
+    <% end %>
+  </div>
+</div>

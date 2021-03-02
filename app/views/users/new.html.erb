@@ -1,0 +1,13 @@
+<div class="main-show">
+<%= form_tag("/users/create") do %>
+ <div class="new-form">
+     <p>ユーザー名</p>
+     <input  name="name" value="<%=@user.name%>">
+     <p>メールアドレス</p>
+     <input  name="email" value="<%=@user.email%>">
+     <p>パスワード</p>
+     <input  name="password" type="password" value="<%=@user.password%>">
+     <input type="submit" value="送信">
+     <% end %>
+  </div>
+</div>

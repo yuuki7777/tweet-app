@@ -1,0 +1,17 @@
+<div class="main">
+<div class="post-form">
+<% @posts.each do |post| %>
+<div class="post-card">
+    <div class="img-content">
+    <%= link_to image_tag("/posts_image/#{post.image_post}"),"/posts/#{post.id}" %>
+    </div>
+    <div class="p-content">
+        <%= link_to(post.content , "/posts/#{post.id}", {class:"aa"}) %>
+        <p>
+        <%=@user_info%>
+        </p>
+        </div>
+        </div>
+        <% end %>
+    </div>
+    </div>
